@@ -4,7 +4,7 @@
 
 - [Descrição](#description)
 - [Variáveis ambiente](#environment-vars)
-- [Rotina de Testes](#test-routine)
+- [Rotinas de Teste](#test-routines)
 - [Iniciar aplicação](#start-application)
 
 
