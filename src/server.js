@@ -1,8 +1,6 @@
 const App = require('./application');
 require ('dotenv/config');
 
-const defaultPort = parseInt(process.env.APP_DEFAULT_PORT);
-
-App.listen(defaultPort, function(){
-    console.log("Servidor rodando na porta: " + defaultPort);
+App.listen(process.env.PORT || 3333, function(){
+    console.log("Servidor rodando na porta: " + process.env.PORT || 3333);
 });
