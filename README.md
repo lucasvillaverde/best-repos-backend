@@ -31,7 +31,7 @@
 
 
 
-## 📍 <a id="environment-vars">Variáveis ambiente</a>
+## 🌎 <a id="environment-vars">Variáveis ambiente</a>
 
 - Para a configuração das variáveis ambiente é necessária a criação de um arquivo na pasta raiz da aplicação, que será chamado de **.env**.
 
@@ -77,7 +77,15 @@
 
 - Após seguir todos os passos, vamos iniciar a aplicação!
 
-- Sendo atribuídas corretamente as variáveis ambiente, vamos começar pela preparação do banco de dados, rodando nossas *migrations*:
+- Vamos primeiro ter certeza de que estamos começando do zero:
+
+  - Limparemos todos os processos realizados pelas *migrations*. Para isso, execute o comando:
+
+    - > yarn sequelize db:migrate:undo:all
+
+  - Isto indica que o sequelize irá desfazer todas as *migrations* e limpará sua base de dados!
+
+- Sendo atribuídas corretamente as variáveis ambiente, vamos começar agora pela preparação do banco de dados, rodando nossas *migrations*:
 
   > yarn sequelize db:migrate
 
