@@ -1,6 +1,6 @@
-# [Backend] - BestRepos - Busque pelos melhores repositórios
+# 🎈 [Backend] - BestRepos - Busque pelos melhores repositórios
 
-### Sumário
+##  🔍 Sumário
 
 - [Descrição](#description)
 - [Variáveis ambiente](#environment-vars)
@@ -9,7 +9,7 @@
 
 
 
-### <a id="description">Descrição</a>
+## 📄 <a id="description">Descrição</a>
 
 - Aplicação responsável pela integração e tráfego dos dados relacionados ao sistema BestRepos (sistema de consulta de repositórios do GitHub).
 
@@ -31,7 +31,7 @@
 
 
 
-### <a id="environment-vars">Variáveis ambiente</a>
+## 📍 <a id="environment-vars">Variáveis ambiente</a>
 
 - Para a configuração das variáveis ambiente é necessária a criação de um arquivo na pasta raiz da aplicação, que será chamado de **.env**.
 
@@ -55,7 +55,7 @@
     DB_HOST=endereco.banco.app.com
     ````
 
-### <a id="test-routines">Rotina de testes</a>
+## 🦾 <a id="test-routines">Rotina de testes</a>
 
 - Tecnologia utilizada para a implementação de TDD:  <a href="https://jestjs.io/">Jest</a>
 
@@ -73,7 +73,7 @@
 
   
 
-### <a id="start-application">Iniciar aplicação</a>
+## 💻 <a id="start-application">Iniciar aplicação</a>
 
 - Após seguir todos os passos, vamos iniciar a aplicação!
 
