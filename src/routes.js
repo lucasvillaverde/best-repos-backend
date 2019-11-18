@@ -4,10 +4,6 @@ const RepositoryController = require('./controllers/RepositoryController');
 const express = require('express');
 const routes = express.Router();
 
-routes.get('/', (req, res) => {
-    return res.json({ hello: "World" });
-});
-
 //Repositories
 routes.get('/repositories', RepositoryController.index);
 routes.get('/repositories/:id', RepositoryController.find);
