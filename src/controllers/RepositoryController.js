@@ -34,7 +34,8 @@ module.exports = {
     },
 
     async store(req, res) {
-        repositories = req.body && Object.values(req.body).values() > 0 ? req.body.repositories : {};
+        console.log(req.body)
+        const repositories = req.body && Object.values(req.body).length > 0 ? req.body.repositories : {};
         try {
             if (Object.keys(repositories).length > 0) {
 
@@ -74,7 +75,7 @@ module.exports = {
 
             return res.sendStatus(200);
         } catch (error) {
-            console.log('ERROR CATCH: ' + error);
+            console.log('ERROR: ' + error);
             return res.status(400).send("Could not store these repositories. Check your input fields and try again.");
         }
     },
