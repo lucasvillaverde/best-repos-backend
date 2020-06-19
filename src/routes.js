@@ -4,6 +4,9 @@ const RepositoryController = require('./controllers/RepositoryController');
 const express = require('express');
 const routes = express.Router();
 
+//HealthCheck
+routes.get('/health', "Hello BestRepos!")
+
 //Repositories
 routes.get('/repositories', RepositoryController.index);
 routes.get('/repositories/:id', RepositoryController.find);
