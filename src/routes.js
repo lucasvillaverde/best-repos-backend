@@ -5,7 +5,7 @@ const express = require('express');
 const routes = express.Router();
 
 //HealthCheck
-routes.get('/health', "Hello BestRepos!")
+routes.get('/health', (req, res) => res.send("Hellow BestRepos!"));
 
 //Repositories
 routes.get('/repositories', RepositoryController.index);
