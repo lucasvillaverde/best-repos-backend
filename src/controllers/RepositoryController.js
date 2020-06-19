@@ -34,7 +34,7 @@ module.exports = {
     },
 
     async store(req, res) {
-        repositories = req.body ? req.body.repositories : {};
+        repositories = req.body && Object.values(req.body).values() > 0 ? req.body.repositories : {};
         try {
             if (Object.keys(repositories).length > 0) {
 
@@ -42,7 +42,7 @@ module.exports = {
                 let updated_repositories = [];
 
                 //Getting the owners to do a bulkCreate.
-                await repositories.map(element => {
+                repositories.map(element => {
                     let repositoryToPush = {...element, github_id: element.id, owner_github_id: element.owner.id }
                     let ownerToPush = { ...element.owner, github_id: element.owner.id }
                     delete ownerToPush.id;
