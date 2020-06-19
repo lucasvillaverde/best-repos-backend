@@ -34,7 +34,7 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { repositories } = req.body;
+        repositories = req.body ? req.body.repositories : {};
         try {
             if (Object.keys(repositories).length > 0) {
 
@@ -59,7 +59,7 @@ module.exports = {
                         ignoreDuplicates: true,
                     }
                 )
-                
+
                 console.log('Storing repositories...');
                 await Repository.bulkCreate(
                     updated_repositories,
