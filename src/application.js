@@ -6,10 +6,9 @@ const cors = require('cors');
 require('./database');
 
 app.use(cors());
-app.use(bodyParser.json())
-app.use(routes);
-app.use(express.json({
+app.use(bodyParser.json({
     limit: '4MB'
-}));
+}))
+app.use(routes);
 
 module.exports = app;
